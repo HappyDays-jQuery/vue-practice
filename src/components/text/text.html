@@ -1,0 +1,5 @@
+<div class="text-input">
+    <label v-if="label">{{ label }}</label>
+    <input ref="input" v-on:input="updateValue($event)">
+    <p>message is: {{ msg }}</p>
+</div>

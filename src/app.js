@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Hello from './components/Hello'
 import Country from './components/Country'
+import Text from './components/Text'
 import VueMdl from 'vue-mdl'
 
 Vue.use(VueMdl)
@@ -8,7 +9,8 @@ Vue.use(VueMdl)
 const AppComponent = Vue.extend({
     name: 'app',
     components: {
-        Hello, Country
+        Hello, Country,
+        'text-input' :Text
     }
 })
 
